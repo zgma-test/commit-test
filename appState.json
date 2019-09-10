@@ -30,7 +30,12 @@
           "memory": 128,
           "layers": []
         },
-        "triggers": []
+        "triggers": [
+          {
+            "resourceName": "apigusEast1TestAPItestput",
+            "config": {}
+          }
+        ]
       }
     },
     "rootNode": "21568d3a-2a12-48ea-8d06-2ab87ef162ae",
@@ -38,7 +43,40 @@
       "0d9f05c0-11ff-494d-8791-9bb4ffbbbbc7"
     ],
     "currentFileId": "0d9f05c0-11ff-494d-8791-9bb4ffbbbbc7",
-    "resources": {},
+    "resources": {
+      "apigusEast1TestAPItestput": {
+        "name": "apigusEast1TestAPItestput",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/MyLambda": "98nqbj",
+            "/": "h2lelj6j7k",
+            "/newchange/test": "k6pdhn",
+            "/newchange": "q1ox7l",
+            "/testWithSlash": "q4m4g1",
+            "/testtwospeciallambda": "q4szm3",
+            "/testtwospecialkumutest": "wey3lk"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/newchange/test",
+          "resourceName": "test",
+          "resourceId": "k6pdhn",
+          "restMethod": "PUT",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "Prod",
+          "stageDeploymentId": "e6ip3h",
+          "mode": 1
+        }
+      }
+    },
     "customTemplate": {
       "dialect": null,
       "definitions": null
@@ -64,7 +102,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1568094889215
+    "lastSave": 1568095029090
   },
   "VCS_STATE": {
     "provider": "GitHub",
