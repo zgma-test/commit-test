@@ -1,0 +1,76 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "21568d3a-2a12-48ea-8d06-2ab87ef162ae": {
+        "id": "21568d3a-2a12-48ea-8d06-2ab87ef162ae",
+        "parent": null,
+        "name": "dwdwd",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "0d9f05c0-11ff-494d-8791-9bb4ffbbbbc7"
+        ],
+        "isRemovable": false,
+        "filePath": "dwdwd"
+      },
+      "0d9f05c0-11ff-494d-8791-9bb4ffbbbbc7": {
+        "id": "0d9f05c0-11ff-494d-8791-9bb4ffbbbbc7",
+        "parent": "21568d3a-2a12-48ea-8d06-2ab87ef162ae",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "dwdwd/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    console.log(\"Hello World\");\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      }
+    },
+    "rootNode": "21568d3a-2a12-48ea-8d06-2ab87ef162ae",
+    "openFiles": [
+      "0d9f05c0-11ff-494d-8791-9bb4ffbbbbc7"
+    ],
+    "currentFileId": "0d9f05c0-11ff-494d-8791-9bb4ffbbbbc7",
+    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "dwdwd",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1568094728134
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "commit-test",
+      "url": "https://github.com/zgma-test/commit-test"
+    }
+  }
+}
